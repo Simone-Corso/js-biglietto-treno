@@ -7,7 +7,35 @@
 
 //Quanti km vuoi fare e quanti anni hai?
 
-const firstAge = parseInt( prompt ('Quanti Anni Hai?'));
-const secondKm = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0,21€'));
+const eta = parseInt( prompt ('Quanti Anni Hai?'));
+const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0,21€'));
 
-//il prezzo del biglietto è definito in base ai km (0.21 € al km)
+const prezzoBiglietto = km * 0.21;
+
+console.log("Il prezzo del biglietto è: " + prezzoBiglietto);
+
+if(eta < 18) {
+    console.log("L'utente è minorenne");
+    // Se è minorenne, devo fare uno sconto del 20%;
+    const sconto =  prezzoBiglietto * 20 / 100
+    console.log("Lo sconto del biglietto è: " + sconto );
+    let prezzoFinale = prezzoBiglietto - sconto 
+    console.log("Il costo del biglietto è:" + prezzoFinale);
+
+} else if (eta > 65) {
+    console.log("L'utente è anziano");
+    // Se è anziano, devo fare uno sconto del 40%;
+    const sconto =  prezzoBiglietto * 40 / 100
+    console.log("Lo sconto del biglietto è: " + sconto );
+    let prezzoFinale = prezzoBiglietto - sconto 
+    console.log("Il costo del biglietto è:" + prezzoFinale);
+
+} else {
+    let prezzoFinale = prezzoBiglietto; 
+    console.log("Qualsiasi altrà età");
+    console.log("Il costo del biglietto è:" + prezzoFinale);
+}
+
+// let prezzoFinale = 20;
+document.getElementById("prezzo").innerHTML=prezzoFinale;
+
