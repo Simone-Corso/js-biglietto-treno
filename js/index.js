@@ -8,4 +8,6 @@
 //Quanti km vuoi fare e quanti anni hai?
 
 const firstAge = parseInt( prompt ('Quanti Anni Hai?'));
-const secondKm = parseInt( prompt ('Quanti Km Vuoi Fare?'));
+const secondKm = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0,21€'));
+
+//il prezzo del biglietto è definito in base ai km (0.21 € al km)
