@@ -8,3 +8,4 @@
 //Quanti km vuoi fare e quanti anni hai?
 
 const firstAge = parseInt( prompt ('Type a number'));
+const secondKm = parseInt( prompt ('Type a number'));
