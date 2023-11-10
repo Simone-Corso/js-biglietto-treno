@@ -11,6 +11,9 @@ const eta = parseInt( prompt ('Quanti Anni Hai?'));
 const km = parseInt( prompt ('Quanti Km Vuoi Fare? Un Km Corrisponde a 0,21€'));
 
 const prezzoBiglietto = km * 0.21;
+let prezzoFinale;
+
+// inseriamo la domanda per verificare che nella console risponda in modo corretto.
 
 console.log("Il prezzo del biglietto è: " + prezzoBiglietto);
 
@@ -19,7 +22,7 @@ if(eta < 18) {
     // Se è minorenne, devo fare uno sconto del 20%;
     const sconto =  prezzoBiglietto * 20 / 100
     console.log("Lo sconto del biglietto è: " + sconto );
-    let prezzoFinale = prezzoBiglietto - sconto 
+    prezzoFinale = prezzoBiglietto - sconto 
     console.log("Il costo del biglietto è:" + prezzoFinale);
 
 } else if (eta > 65) {
@@ -27,15 +30,15 @@ if(eta < 18) {
     // Se è anziano, devo fare uno sconto del 40%;
     const sconto =  prezzoBiglietto * 40 / 100
     console.log("Lo sconto del biglietto è: " + sconto );
-    let prezzoFinale = prezzoBiglietto - sconto 
+    prezzoFinale = prezzoBiglietto - sconto 
     console.log("Il costo del biglietto è:" + prezzoFinale);
 
 } else {
-    let prezzoFinale = prezzoBiglietto; 
+    prezzoFinale = prezzoBiglietto; 
     console.log("Qualsiasi altrà età");
     console.log("Il costo del biglietto è:" + prezzoFinale);
 }
 
 // let prezzoFinale = 20;
-document.getElementById("prezzo").innerHTML=prezzoFinale;
+document.getElementById("prezzo").innerHTML="Il prezzo finale è " + prezzoFinale;
 
