@@ -7,5 +7,5 @@
 
 //Quanti km vuoi fare e quanti anni hai?
 
-const firstAge = parseInt( prompt ('Type a number'));
-const secondKm = parseInt( prompt ('Type a number'));
+const firstAge = parseInt( prompt ('Quanti Anni Hai?'));
+const secondKm = parseInt( prompt ('Quanti Km Vuoi Fare?'));
