@@ -40,6 +40,6 @@ if(eta < 18) {
     console.log("Il costo del biglietto è:" + prezzoFinale);
 }
 
-// let prezzoFinale = 20;
+// Infine il passaggio per far si che si presenti nell'html il prezzo finale.
 document.getElementById("prezzo").innerHTML="Il prezzo finale è " + prezzoFinale;
 
