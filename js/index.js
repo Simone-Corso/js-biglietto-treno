@@ -25,6 +25,7 @@ if(eta < 18) {
     prezzoFinale = prezzoBiglietto - sconto 
     console.log("Il costo del biglietto è:" + prezzoFinale);
 
+    //inseriamo altrimenti per over 65
 } else if (eta > 65) {
     console.log("L'utente è anziano");
     // Se è anziano, devo fare uno sconto del 40%;
@@ -32,7 +33,7 @@ if(eta < 18) {
     console.log("Lo sconto del biglietto è: " + sconto );
     prezzoFinale = prezzoBiglietto - sconto 
     console.log("Il costo del biglietto è:" + prezzoFinale);
-
+    //inseriamo altrimenti per qualsiasi età
 } else {
     prezzoFinale = prezzoBiglietto; 
     console.log("Qualsiasi altrà età");
